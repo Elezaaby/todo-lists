@@ -2,7 +2,7 @@ import React from 'react'
 
 const Reminders = () => {
   return (
-    <div>Reminders</div>
+    <div>Reminders1</div>
   )
 }
 
