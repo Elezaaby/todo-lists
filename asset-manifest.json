@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/todolist/static/css/main.f319416f.css",
+    "main.js": "/todolist/static/js/main.d039d0c9.js",
+    "static/media/avatar.jpeg": "/todolist/static/media/avatar.39b85adb73e8287aa0aa.jpeg",
+    "static/media/fa-solid-900.ttf": "/todolist/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
+    "static/media/fa-brands-400.ttf": "/todolist/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
+    "static/media/fa-solid-900.woff2": "/todolist/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/fa-brands-400.woff2": "/todolist/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
+    "static/media/fa-regular-400.ttf": "/todolist/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/fa-regular-400.woff2": "/todolist/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
+    "static/media/logo.png": "/todolist/static/media/logo.515b83d0e0362ecf4e63.png",
+    "static/media/fa-v4compatibility.ttf": "/todolist/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/fa-v4compatibility.woff2": "/todolist/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
+    "index.html": "/todolist/index.html",
+    "main.f319416f.css.map": "/todolist/static/css/main.f319416f.css.map",
+    "main.d039d0c9.js.map": "/todolist/static/js/main.d039d0c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f319416f.css",
+    "static/js/main.d039d0c9.js"
+  ]
+}
