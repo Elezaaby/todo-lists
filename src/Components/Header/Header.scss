@@ -71,6 +71,19 @@
       color: #5f6368;
     }
   }
+
+  .nav_btn {
+    button {
+      padding: 10px;
+      background-color: #909090;
+      margin: 0 10px;
+      width: 80px;
+      border-radius: 10px;
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .sidebar {

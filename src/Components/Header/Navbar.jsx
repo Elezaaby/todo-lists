@@ -29,7 +29,7 @@ const Navbar = ({ userData, logOut }) => {
     const nav = this.document.querySelector('.navbar')
     nav.classList.toggle('active', window.scrollY > 10)
   })
-
+  console.log(userData);
 
   return (
     <section className='navbar'>
@@ -84,9 +84,6 @@ const Navbar = ({ userData, logOut }) => {
           <button><Link to='todo-lists/login'> Login</Link></button>
           <button><Link to='todo-lists/register'>Register</Link></button>
         </div>}
-
-
-
     </section>
   )
 }
