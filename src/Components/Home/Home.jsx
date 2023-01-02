@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Routes>
-        <Route path='todo-lists/login' element={<Login  />} />
+        <Route path='todo-lists/login' element={<Login />} />
         <Route path='todo-lists/register' element={<Register />} />
         <Route path='todo-lists/reminders' element={<Reminders />} />
       </Routes>
