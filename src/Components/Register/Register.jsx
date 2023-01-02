@@ -19,7 +19,7 @@ const Register = () => {
     last_name: '',
     email: '',
     password: '',
-    age: 0,
+    age: 0, 
   })
 
   function validateRegister(user) {

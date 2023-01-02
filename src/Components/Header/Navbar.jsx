@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
@@ -10,10 +10,13 @@ import { useProSidebar } from 'react-pro-sidebar';
 import avatar from '../images/avatar.jpeg'
 import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
+import { UserDataContext } from './../../UserDataContext';
 
 
-const Navbar = ({ userData, logOut }) => {
+const Navbar = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
+  let { userData } = useContext(UserDataContext)
+  let { logOut } = useContext(UserDataContext)
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -29,7 +32,9 @@ const Navbar = ({ userData, logOut }) => {
     const nav = this.document.querySelector('.navbar')
     nav.classList.toggle('active', window.scrollY > 10)
   })
-  console.log(userData);
+
+
+
 
   return (
     <section className='navbar'>

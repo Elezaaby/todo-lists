@@ -5,11 +5,11 @@ import Sidebaar from './Sidebaar';
 import './Header.scss'
 
 
-const Header = ({userData,logOut}) => {
+const Header = () => {
   return (
     <div>
       <ProSidebarProvider>
-        <Navbar userData={userData} logOut={logOut} />
+        <Navbar />
         <Sidebaar />
       </ProSidebarProvider>
     </div>

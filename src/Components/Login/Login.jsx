@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import logo from '../images/logo.png'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import './Login.scss'
 import Joi from 'joi';
+import { UserDataContext } from './../../UserDataContext';
 
-const Login = ({ gitUserData }) => {
+const Login = () => {
+
+
+  const { gitUserData } = useContext(UserDataContext)
 
   let navigate = useNavigate()
   // list error api
@@ -52,7 +56,7 @@ const Login = ({ gitUserData }) => {
       if (data.message === 'success') {
         localStorage.setItem('userToken', data.token)
         gitUserData()
-        navigate('/todo-lists/notes')
+        navigate('/todo-lists/home')
       }
       else {
         setError(data.message)
