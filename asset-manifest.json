@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/todo-lists/static/css/main.a3c47843.css",
-    "main.js": "/todo-lists/static/js/main.773b55f8.js",
+    "main.css": "/todo-lists/static/css/main.a28fb835.css",
+    "main.js": "/todo-lists/static/js/main.fa3e0a00.js",
     "static/media/avatar.jpeg": "/todo-lists/static/media/avatar.39b85adb73e8287aa0aa.jpeg",
     "static/media/fa-solid-900.ttf": "/todo-lists/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/fa-brands-400.ttf": "/todo-lists/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.ttf": "/todo-lists/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
     "static/media/fa-v4compatibility.woff2": "/todo-lists/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/todo-lists/index.html",
-    "main.a3c47843.css.map": "/todo-lists/static/css/main.a3c47843.css.map",
-    "main.773b55f8.js.map": "/todo-lists/static/js/main.773b55f8.js.map"
+    "main.a28fb835.css.map": "/todo-lists/static/css/main.a28fb835.css.map",
+    "main.fa3e0a00.js.map": "/todo-lists/static/js/main.fa3e0a00.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3c47843.css",
-    "static/js/main.773b55f8.js"
+    "static/css/main.a28fb835.css",
+    "static/js/main.fa3e0a00.js"
   ]
 }
