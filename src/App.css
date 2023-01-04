@@ -15,8 +15,17 @@ a {
   color: #000;
 }
 
+li {
+  list-style: none;
+}
+
+
 .app {
   display: flex;
   height: 100%;
-  margin-top: 60px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
 }

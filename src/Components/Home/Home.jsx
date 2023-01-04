@@ -4,6 +4,7 @@ import './Home.scss'
 import Reminders from './../Reminders/Reminders';
 import Login from './../Login/Login';
 import Register from './../Register/Register';
+import Notes from './../Notes/Notes';
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
       <Routes>
         <Route path='todo-lists/login' element={<Login />} />
         <Route path='todo-lists/register' element={<Register />} />
+        <Route path='todo-lists' element={<Notes />} />
+        <Route path='todo-lists/home' element={<Notes />} />
         <Route path='todo-lists/reminders' element={<Reminders />} />
       </Routes>
     </div>
