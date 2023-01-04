@@ -17,7 +17,6 @@ export function UserDataContextProvider(props) {
     if (localStorage.getItem('userToken')) {
       gitUserData()
     }
-    gitAllNotes()
   }, [])
 
   function gitUserData() {

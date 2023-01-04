@@ -13,6 +13,7 @@ const Notes = () => {
 
   useEffect(() => {
     gitAllNotes()
+    // eslint-disable-next-line 
   }, [])
 
   const DrawerHeader = styled('div')(({ theme }) => ({
