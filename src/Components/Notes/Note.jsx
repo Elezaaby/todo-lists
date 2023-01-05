@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Card, CardActions, CardContent, styled, Typography } from '@mui/material'
-import { ArchiveOutlined as Archive, DeleteOutlineOutlined as Delete } from '@mui/icons-material'
+import { ArchiveOutlined as Archive } from '@mui/icons-material'
+import { UserDataContext } from '../../UserDataContext'
 
 const Note = ({ note }) => {
+  const { deleteNote } = useContext(UserDataContext)
+
 
   const StyledCard = styled(Card)`
     width: 240px;
@@ -11,6 +14,7 @@ const Note = ({ note }) => {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
   `
+
   return (
     <StyledCard>
       <CardContent>
@@ -19,9 +23,8 @@ const Note = ({ note }) => {
       </CardContent>
       <CardActions>
         <Archive fontSize='small' style={{ marginLeft: 'auto' }} />
-        <Delete fontSize='small' />
+        <i style={{ cursor: 'pointer', marginLeft: '10px' }} onClick={() => deleteNote(note._id)} className="fa-solid fa-trash-can"></i>
       </CardActions>
-
     </StyledCard>
   )
 }

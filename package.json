@@ -15,6 +15,7 @@
     "axios": "^1.2.1",
     "joi": "^17.7.0",
     "jwt-decode": "^3.1.2",
+    "noty": "^3.2.0-beta-deprecated",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",

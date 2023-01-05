@@ -13,8 +13,7 @@ const Notes = () => {
 
   useEffect(() => {
     gitAllNotes()
-    // eslint-disable-next-line 
-  }, [])
+  }, [gitAllNotes])
 
   const DrawerHeader = styled('div')(({ theme }) => ({
     ...theme.mixins.toolbar
@@ -29,11 +28,11 @@ const Notes = () => {
             <AddNote />
             <ul className="note_container">
               <Grid container>
-                {allNotes.map((note) =>
-                  <Grid item>
+                {allNotes ? allNotes.map((note, index) =>
+                  <Grid key={index} item>
                     <Note note={note} />
                   </Grid>
-                )}
+                ) : 'no note'}
               </Grid>
             </ul>
           </Box>
