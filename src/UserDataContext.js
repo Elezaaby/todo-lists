@@ -54,7 +54,7 @@ export function UserDataContextProvider(props) {
     })
     if (data.message === "deleted") {
       gitAllNotes()
-      showNotification("success", `Task was successfully ${data.message}`)
+      showNotification("error", `Task was successfully ${data.message}`)
     }
   }
 
@@ -69,7 +69,7 @@ export function UserDataContextProvider(props) {
   function showNotification(type, text) {
     new Noty({
       type: type,
-      text: `<i class="fa-solid fa-xmark"></i> ${text}`,
+      text: `<i class="fa-solid fa-check"></i> ${text}`,
       layout: "bottomRight",
       timeout: 2000,
       progressBar: true,
@@ -79,7 +79,7 @@ export function UserDataContextProvider(props) {
   }
 
 
-  return <UserDataContext.Provider value={{ gitUserData, userData, logOut, allNotes, gitAllNotes, deleteNote }} >
+  return <UserDataContext.Provider value={{ gitUserData, userData, logOut, allNotes, gitAllNotes, deleteNote, showNotification }} >
     {props.children}
   </UserDataContext.Provider>
 }
