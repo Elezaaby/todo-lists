@@ -10,3 +10,48 @@
   min-height: 30px;
   margin-bottom: 20px;
 }
+
+.note {
+  min-height: 28px;
+
+  .input_title {
+    font-weight: 600;
+    font-size: 16px;
+    word-wrap: break-word;
+
+    .icon_thumbtack {
+      position: relative;
+      top: 0px;
+      left: -5px;
+      cursor: pointer;
+      color: #5f6368;
+      font-size: 19px;
+      opacity: 0;
+    }
+  }
+
+  .input_desc {
+    word-wrap: break-word;
+  }
+
+  .btn_note {
+    opacity: 0;
+    color: #5f6368;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+    i {
+      cursor: pointer;
+    }
+  }
+  &:hover .btn_note {
+    opacity: 1;
+  }
+  &:hover .icon_thumbtack {
+    opacity: 1;
+  }
+  &:hover {
+    box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 7%);
+  }
+}

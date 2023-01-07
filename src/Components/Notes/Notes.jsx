@@ -8,12 +8,12 @@ import AddNote from './AddNote';
 
 
 const Notes = () => {
-  const { allNotes } = useContext(UserDataContext)
-  const { gitAllNotes } = useContext(UserDataContext)
+  const { allNotes, gitAllNotes } = useContext(UserDataContext)
 
   useEffect(() => {
     gitAllNotes()
-  }, [gitAllNotes])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const DrawerHeader = styled('div')(({ theme }) => ({
     ...theme.mixins.toolbar
@@ -27,7 +27,7 @@ const Notes = () => {
             <DrawerHeader />
             <AddNote />
             <ul className="note_container">
-              <Grid container>
+              <Grid container >
                 {allNotes ? allNotes.map((note, index) =>
                   <Grid key={index} item>
                     <Note note={note} />
