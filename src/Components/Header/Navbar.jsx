@@ -11,6 +11,7 @@ import avatar from '../images/avatar.jpeg'
 import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
 import { UserDataContext } from './../../UserDataContext';
+import { InputLabel } from '@mui/material';
 
 
 const Navbar = () => {
@@ -78,6 +79,11 @@ const Navbar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              <MenuItem onClick={handleCloseUserMenu}>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  {`Welcom ${userData.first_name}  ${userData.last_name}`}
+                </InputLabel>
+              </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
                 <Typography onClick={logOut} className='nav_btn' textAlign="center">Logout</Typography>
               </MenuItem>
