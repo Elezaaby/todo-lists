@@ -14,6 +14,7 @@ export function UserDataContextProvider(props) {
 
   const [userData, setUserData] = useState(null)
   const [allNotes, setAllNotes] = useState([])
+  const [trashNote, setTrashNote] = useState([])
   let token = localStorage.getItem('userToken')
 
   let navigate = useNavigate()
@@ -44,20 +45,22 @@ export function UserDataContextProvider(props) {
   }
 
 
-  async function deleteNote(NoteID) {
+  async function deleteNote(Note) {
     let token = localStorage.getItem('userToken')
     let { data } = await axios.delete('https://route-movies-api.vercel.app/deleteNote', {
       data: {
-        NoteID,
+        NoteID: Note._id,
         token
       }
     })
     if (data.message === "deleted") {
       gitAllNotes()
+
+      setTrashNote([...trashNote, Note])
+
       showNotification("error", `Task was successfully ${data.message}`)
     }
   }
-
 
   function logOut() {
     localStorage.removeItem('userToken')
@@ -79,7 +82,7 @@ export function UserDataContextProvider(props) {
   }
 
 
-  return <UserDataContext.Provider value={{ gitUserData, userData, logOut, allNotes, gitAllNotes, deleteNote, showNotification }} >
+  return <UserDataContext.Provider value={{ gitUserData, userData, logOut, allNotes, gitAllNotes, deleteNote, showNotification, trashNote }} >
     {props.children}
   </UserDataContext.Provider>
 }

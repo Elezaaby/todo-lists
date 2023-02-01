@@ -7,12 +7,10 @@ import Menu from '@mui/material/Menu';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useProSidebar } from 'react-pro-sidebar';
-import avatar from '../images/avatar.jpeg'
+import avatar from '../images/avatar.jpg'
 import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
 import { UserDataContext } from './../../UserDataContext';
-import { InputLabel } from '@mui/material';
-
 
 const Navbar = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -57,6 +55,7 @@ const Navbar = () => {
         <div className="avatar_settings">
           <i className="fa-solid fa-gear"></i>
           <Box sx={{ flexGrow: 0 }}>
+            {/* <span style={{ fontSize: '12px', color: '#000' }}>{` ${userData.first_name}  ${userData.last_name}`}</span> */}
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src={avatar} />
@@ -79,11 +78,6 @@ const Navbar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <MenuItem onClick={handleCloseUserMenu}>
-                <InputLabel htmlFor="input-with-icon-adornment">
-                  {`Welcom ${userData.first_name}  ${userData.last_name}`}
-                </InputLabel>
-              </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
                 <Typography onClick={logOut} className='nav_btn' textAlign="center">Logout</Typography>
               </MenuItem>

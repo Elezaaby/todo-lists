@@ -27,12 +27,12 @@ const Notes = () => {
             <DrawerHeader />
             <AddNote />
             <ul className="note_container">
-              <Grid container >
+              <Grid className='grid_container' container >
                 {allNotes ? allNotes.map((note, index) =>
-                  <Grid key={index} item>
+                  <Grid className='grid_note' key={index} item>
                     <Note note={note} />
                   </Grid>
-                ) : 'no note'}
+                ) : <sapn className='noNote'>add first note!</sapn>}
               </Grid>
             </ul>
           </Box>

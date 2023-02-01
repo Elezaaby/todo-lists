@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   border: none;
   background: none;
@@ -28,4 +32,19 @@ li {
 .container {
   width: 90%;
   margin: auto;
+}
+
+::-webkit-scrollbar {
+  width: .70rem;
+  background-color: #f5f5f5;
+  border-left: 1px solid #c4bebe;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #939393;
 }

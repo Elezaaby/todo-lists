@@ -33,7 +33,7 @@ const Note = ({ note }) => {
           <i className="fa-regular fa-bell"></i>
           <i className="fa-regular fa-image"></i>
           <i className="fa-solid fa-palette"></i>
-          <i onClick={() => deleteNote(note._id)} className="fa-solid fa-trash-can"></i>
+          <i onClick={() => deleteNote(note)} className="fa-solid fa-trash-can"></i>
           <Archive fontSize='small' />
         </CardActions>
       </StyledCard>
